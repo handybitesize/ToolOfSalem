@@ -1,0 +1,14 @@
+{
+    "name": "root/toolofsalem",
+    "description": "Investagtive/Role picker for Town of Salem",
+    "require": {
+        "bcosca/fatfree": "^3.5",
+        "raveren/kint": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Carey Hiles",
+            "email": "carey.hiles@gmail.com"
+        }
+    ]
+}
