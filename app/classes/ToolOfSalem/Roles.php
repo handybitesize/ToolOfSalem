@@ -6,6 +6,7 @@ class Roles
 {
     public function view()
     {
-        ddd('dsdd');
+        $template=new \Template;
+        echo $template->render('roles.html');
     }
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+<h1>Title</h1>
+<div class="row">
+<div class="col-md-3">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Graveyard</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="dropable list-group">
+	  <li class="droptarget list-group-item text-muted">Drop here</li>
+	</ul>
+  </div>
+</div>
+
+	
+</div>
+<div class="col-md-3">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Your Role</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="dropable list-group">
+	  <li class="droptarget list-group-item text-muted">C'mon! You know this one</li>
+	</ul>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Confirmed by action</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="dropable list-group">
+	  <li class="list-group-item">Cras justo odio</li>
+	  <li class="list-group-item">Dapibus ac facilisis in</li>
+	  <li class="list-group-item">Morbi leo risus</li>
+	  <li class="list-group-item">Porta ac consectetur ac</li>
+	  <li class="list-group-item">Vestibulum at eros</li>
+	</ul>
+  </div>
+</div>
+
+	
+</div>
+<div class="col-md-3">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Claimed/Scratch</h3>
+	  </div>
+	  <div class="panel-body">
+	    <ul class="dropable list-group">
+		  <li class="list-group-item">Cras justo odio</li>
+		  <li class="list-group-item">Dapibus ac facilisis in</li>
+		  <li class="list-group-item">Morbi leo risus</li>
+		  <li class="list-group-item">Porta ac consectetur ac</li>
+		  <li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+	  </div>
+	</div>
+</div>
+<div class="col-md-3">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Possible Roles</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="dropable list-group possible-roles">
+	  <li class="list-group-item tos-tp">Doctor</li>
+	  <li class="list-group-item tos-tp">Bodyguard</li>
+	  <li class="list-group-item tos-tk">Veteran</li>
+	  <li class="list-group-item">Porta ac consectetur ac</li>
+	  <li class="list-group-item">Vestibulum at eros</li>
+	</ul>
+  </div>
+</div>
+
+	
+</div>
+	
+</div>
+</div>
+</body>
+  <script>
+  $(function() {
+    $( ".list-group-item" ).draggable({ snap: ".dropable", snapMode: "inner" });
+  });
+  </script>
+</html>
+
+

@@ -2,6 +2,7 @@
 $loader = require 'vendor/autoload.php';
 $loader->add('', 'app/classes');
 $f3 = \Base::instance();
+$f3->set('UI', 'app/templates/');
 $f3->route(
     'GET /',
     function () {
