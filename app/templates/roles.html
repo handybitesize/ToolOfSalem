@@ -3,7 +3,8 @@
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -22,19 +23,32 @@
 <div class="col-md-3">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Graveyard</h3>
+    <h3 class="panel-title">Game Mode</h3>
   </div>
   <div class="panel-body">
-    <ul class="dropable list-group">
-	  <li class="droptarget list-group-item text-muted">Drop here</li>
+    <ul class="list-group">
+	<li class="list-group-item tos-tk disabled">Jailor</li>
+	<li class="list-group-item tos-ti">Town Investigative</li>
+	<li class="list-group-item tos-ti">Town Investigative</li>
+	<li class="list-group-item tos-tp">Town Protective</li>
+	<li class="list-group-item tos-ts">Town Support</li>
+	<li class="list-group-item tos-ts">Town Support</li>
+	<li class="list-group-item tos-tk">Town Killing</li>
+	<li class="list-group-item tos-rt">Random Town</li>
+	<li class="list-group-item tos-mk">Godfather</li>
+	<li class="list-group-item tos-mk">Mafioso</li>
+	<li class="list-group-item tos-rm">Random Mafia</li>
+	
+	<li class="list-group-item tos-nb">Neutral Benign</li>
+	<li class="list-group-item tos-ne">Neutral Evil</li>
+	<li class="list-group-item tos-nk">Neutral Killing</li>
+	<li class="list-group-item tos-any">Any</li>
 	</ul>
   </div>
 </div>
 
-	
 </div>
-<div class="col-md-3">
-<div class="panel panel-default">
+<div class="col-md-3"><div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Your Role</h3>
   </div>
@@ -46,33 +60,37 @@
 </div>
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Confirmed by action</h3>
+    <h3 class="panel-title">Graveyard</h3>
   </div>
   <div class="panel-body">
     <ul class="dropable list-group">
-	  <li class="list-group-item">Cras justo odio</li>
-	  <li class="list-group-item">Dapibus ac facilisis in</li>
-	  <li class="list-group-item">Morbi leo risus</li>
-	  <li class="list-group-item">Porta ac consectetur ac</li>
-	  <li class="list-group-item">Vestibulum at eros</li>
+	  <li class="droptarget list-group-item text-muted">Drop here</li>
 	</ul>
   </div>
 </div>
 
-	
 </div>
 <div class="col-md-3">
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Confirmed by action/rolelist</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="dropable list-group">
+    <li class="droptarget list-group-item text-muted">Drop here</li>
+	</ul>
+  </div>
+</div>
+
+
 	<div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Claimed/Scratch</h3>
 	  </div>
 	  <div class="panel-body">
 	    <ul class="dropable list-group">
-		  <li class="list-group-item">Cras justo odio</li>
-		  <li class="list-group-item">Dapibus ac facilisis in</li>
-		  <li class="list-group-item">Morbi leo risus</li>
-		  <li class="list-group-item">Porta ac consectetur ac</li>
-		  <li class="list-group-item">Vestibulum at eros</li>
+<li class="droptarget list-group-item text-muted">Drop here</li>
 		</ul>
 	  </div>
 	</div>
@@ -84,11 +102,36 @@
   </div>
   <div class="panel-body">
     <ul class="dropable list-group possible-roles">
-	  <li class="list-group-item tos-tp">Doctor</li>
-	  <li class="list-group-item tos-tp">Bodyguard</li>
-	  <li class="list-group-item tos-tk">Veteran</li>
-	  <li class="list-group-item">Porta ac consectetur ac</li>
-	  <li class="list-group-item">Vestibulum at eros</li>
+<li class="tile list-group-item tos-nb r-amne">Amnesiac</li>
+<li class="tile list-group-item tos-nk r-arso">Arsonist</li>
+<li class="tile list-group-item tos-ms r-bm">Blackmailer</li>
+<li class="tile list-group-item tos-tp r-bg">Bodyguard</li>
+<li class="tile list-group-item tos-ms r-consig">Consigliere</li>
+<li class="tile list-group-item tos-ms r-conso">Consort</li>
+<li class="tile list-group-item tos-md r-disg">Disguiser</li>
+<li class="tile list-group-item tos-tp r-doc">Doctor</li>
+<li class="tile list-group-item tos-ts r-esco">Escort</li>
+<li class="tile list-group-item tos-ne r-exe">Executioner</li>
+<li class="tile list-group-item tos-md r-frame">Framer</li>
+<li class="tile list-group-item tos-mk r-gf">Godfather</li>
+<li class="tile list-group-item tos-ti r-inv">Investigator</li>
+<li class="tile list-group-item tos-tk r-jai">Jailor</li>
+<li class="tile list-group-item tos-md r-jan">Janitor</li>
+<li class="tile list-group-item tos-ne r-jes">Jester</li>
+<li class="tile list-group-item tos-ti r-lo">Lookout</li>
+<li class="tile list-group-item tos-mk r-maf">Mafioso</li>
+<li class="tile list-group-item tos-ts r-may">Mayor</li>
+<li class="tile list-group-item tos-tsr r-med">Medium</li>
+<li class="tile list-group-item tos-ts r-ret">Retributionist</li>
+<li class="tile list-group-item tos-nk r-sk">Serial Killer</li>
+<li class="tile list-group-item tos-ti r-she">Sheriff</li>
+<li class="tile list-group-item tos-ti r-spy">Spy</li>
+<li class="tile list-group-item tos-nb r-sruv">Survivor</li>
+<li class="tile list-group-item tos-ts r-trans">Transporter</li>
+<li class="tile list-group-item tos-tk r-vet">Veteran</li>
+<li class="tile list-group-item tos-tk r-vig">Vigilante</li>
+<li class="tile list-group-item tos-ne r-wit">Witch</li>
+<li class="tile list-group-item tos-nk r-ww">Werewolf</li>
 	</ul>
   </div>
 </div>
@@ -101,7 +144,7 @@
 </body>
   <script>
   $(function() {
-    $( ".list-group-item" ).draggable({ snap: ".dropable", snapMode: "inner" });
+    $( ".list-group-item.tile" ).draggable({ snap: ".dropable", snapMode: "inner" });
   });
   </script>
 </html>
