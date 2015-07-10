@@ -26,23 +26,23 @@
     <h3 class="panel-title">Game Mode</h3>
   </div>
   <div class="panel-body">
-    <ul class="list-group">
-	<li class="list-group-item tos-tk disabled">Jailor</li>
+    <ul class="list-group gamelist">
+	<li class="list-group-item tos-tk r-jai">Jailor</li>
 	<li class="list-group-item tos-ti">Town Investigative</li>
 	<li class="list-group-item tos-ti">Town Investigative</li>
 	<li class="list-group-item tos-tp">Town Protective</li>
 	<li class="list-group-item tos-ts">Town Support</li>
 	<li class="list-group-item tos-ts">Town Support</li>
 	<li class="list-group-item tos-tk">Town Killing</li>
-	<li class="list-group-item tos-rt">Random Town</li>
-	<li class="list-group-item tos-mk">Godfather</li>
-	<li class="list-group-item tos-mk">Mafioso</li>
-	<li class="list-group-item tos-rm">Random Mafia</li>
+	<li class="list-group-item rnd-town">Random Town</li>
+	<li class="list-group-item tos-mk r-gf">Godfather</li>
+	<li class="list-group-item tos-mk r-maf">Mafioso</li>
+	<li class="list-group-item rnd-mafia">Random Mafia</li>
 	
 	<li class="list-group-item tos-nb">Neutral Benign</li>
 	<li class="list-group-item tos-ne">Neutral Evil</li>
 	<li class="list-group-item tos-nk">Neutral Killing</li>
-	<li class="list-group-item tos-any">Any</li>
+	<li class="list-group-item any">Any</li>
 	</ul>
   </div>
 </div>
@@ -53,7 +53,7 @@
     <h3 class="panel-title">Your Role</h3>
   </div>
   <div class="panel-body">
-    <ul class="dropable list-group">
+    <ul class="dropable list-group confirm-yours">
 	  <li class="droptarget list-group-item text-muted">C'mon! You know this one</li>
 	</ul>
   </div>
@@ -63,25 +63,25 @@
     <h3 class="panel-title">Graveyard</h3>
   </div>
   <div class="panel-body">
-    <ul class="dropable list-group">
+    <ul class="dropable list-group confirm-dead">
 	  <li class="droptarget list-group-item text-muted">Drop here</li>
 	</ul>
   </div>
 </div>
-
-</div>
-<div class="col-md-3">
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Confirmed by action/rolelist</h3>
   </div>
   <div class="panel-body">
-    <ul class="dropable list-group">
+    <ul class="dropable list-group confirm-action">
     <li class="droptarget list-group-item text-muted">Drop here</li>
 	</ul>
   </div>
 </div>
+</div>
+<div class="col-md-3">
+
+
 
 
 	<div class="panel panel-default">
@@ -98,40 +98,40 @@
 <div class="col-md-3">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Possible Roles</h3>
+    <h3 class="panel-title">Possible Roles<button class="badge rolesort pull-right" data-order="random">Align</button></h3>
   </div>
   <div class="panel-body">
     <ul class="dropable list-group possible-roles">
-<li class="tile list-group-item tos-nb r-amne">Amnesiac</li>
-<li class="tile list-group-item tos-nk r-arso">Arsonist</li>
-<li class="tile list-group-item tos-ms r-bm">Blackmailer</li>
-<li class="tile list-group-item tos-tp r-bg">Bodyguard</li>
-<li class="tile list-group-item tos-ms r-consig">Consigliere</li>
-<li class="tile list-group-item tos-ms r-conso">Consort</li>
-<li class="tile list-group-item tos-md r-disg">Disguiser</li>
-<li class="tile list-group-item tos-tp r-doc">Doctor</li>
-<li class="tile list-group-item tos-ts r-esco">Escort</li>
-<li class="tile list-group-item tos-ne r-exe">Executioner</li>
-<li class="tile list-group-item tos-md r-frame">Framer</li>
-<li class="tile list-group-item tos-mk r-gf">Godfather</li>
-<li class="tile list-group-item tos-ti r-inv">Investigator</li>
-<li class="tile list-group-item tos-tk r-jai">Jailor</li>
-<li class="tile list-group-item tos-md r-jan">Janitor</li>
-<li class="tile list-group-item tos-ne r-jes">Jester</li>
-<li class="tile list-group-item tos-ti r-lo">Lookout</li>
-<li class="tile list-group-item tos-mk r-maf">Mafioso</li>
-<li class="tile list-group-item tos-ts r-may">Mayor</li>
-<li class="tile list-group-item tos-tsr r-med">Medium</li>
-<li class="tile list-group-item tos-ts r-ret">Retributionist</li>
-<li class="tile list-group-item tos-nk r-sk">Serial Killer</li>
-<li class="tile list-group-item tos-ti r-she">Sheriff</li>
-<li class="tile list-group-item tos-ti r-spy">Spy</li>
-<li class="tile list-group-item tos-nb r-sruv">Survivor</li>
-<li class="tile list-group-item tos-ts r-trans">Transporter</li>
-<li class="tile list-group-item tos-tk r-vet">Veteran</li>
-<li class="tile list-group-item tos-tk r-vig">Vigilante</li>
-<li class="tile list-group-item tos-ne r-wit">Witch</li>
-<li class="tile list-group-item tos-nk r-ww">Werewolf</li>
+<li class="tile list-group-item tos-nb r-amne" data-role="amne" data-align="nb" data-random="neutral" data-unique="false">Amnesiac</li>
+<li class="tile list-group-item tos-nk r-arso" data-role="arso" data-align="nk" data-random="neutral" data-unique="false">Arsonist<span class="badge">NI</span></li>
+<li class="tile list-group-item tos-ms r-bm" data-role="bm" data-align="ms" data-random="mafia" data-unique="false">Blackmailer</li>
+<li class="tile list-group-item tos-tp r-bg" data-role="bg" data-align="tp" data-random="town" data-unique="false">Bodyguard</li>
+<li class="tile list-group-item tos-ms r-consig" data-role="consig" data-align="ms" data-random="mafia" data-unique="false">Consigliere</li>
+<li class="tile list-group-item tos-ms r-conso" data-role="conso" data-align="ms" data-random="mafia" data-unique="false">Consort</li>
+<li class="tile list-group-item tos-md r-disg" data-role="disg" data-align="md" data-random="mafia" data-unique="false">Disguiser</li>
+<li class="tile list-group-item tos-tp r-doc" data-role="doc" data-align="tp" data-random="town" data-unique="false">Doctor</li>
+<li class="tile list-group-item tos-ts r-esco" data-role="esco" data-align="ts" data-random="town" data-unique="false">Escort</li>
+<li class="tile list-group-item tos-ne r-exe" data-role="exe" data-align="ne" data-random="neutral" data-unique="false">Executioner<span class="badge">NI</span></li>
+<li class="tile list-group-item tos-md r-frame" data-role="frame" data-align="md" data-random="mafia" data-unique="false">Framer</li>
+<li class="tile list-group-item tos-mk r-gf" data-role="gf" data-align="mk" data-random="mafia" data-unique="true">Godfather<span class="badge">NI</span><span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-ti r-inv" data-role="inv" data-align="ti" data-random="town" data-unique="false">Investigator</li>
+<li class="tile list-group-item tos-tk r-jai" data-role="jai" data-align="tk" data-random="town" data-unique="true">Jailor<span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-md r-jan" data-role="jan" data-align="md" data-random="mafia" data-unique="false">Janitor</li>
+<li class="tile list-group-item tos-ne r-jes" data-role="jes" data-align="ne" data-random="neutral" data-unique="false">Jester</li>
+<li class="tile list-group-item tos-ti r-lo" data-role="lo" data-align="ti" data-random="town" data-unique="false">Lookout</li>
+<li class="tile list-group-item tos-mk r-maf" data-role="maf" data-align="mk" data-random="mafia" data-unique="true">Mafioso<span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-ts r-may" data-role="may" data-align="ts" data-random="town" data-unique="true">Mayor<span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-ts r-med" data-role="med" data-align="ts" data-random="town" data-unique="false">Medium</li>
+<li class="tile list-group-item tos-ts r-ret" data-role="ret" data-align="ts" data-random="town" data-unique="true">Retributionist<span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-nk r-sk" data-role="sk" data-align="nk" data-random="neutral" data-unique="false">Serial Killer<span class="badge">NI</span></li>
+<li class="tile list-group-item tos-ti r-she" data-role="she" data-align="ti" data-random="town" data-unique="false">Sheriff</li>
+<li class="tile list-group-item tos-ti r-spy" data-role="spy" data-align="ti" data-random="town" data-unique="false">Spy</li>
+<li class="tile list-group-item tos-nb r-surv" data-role="surv" data-align="nb" data-random="neutral" data-unique="false">Survivor</li>
+<li class="tile list-group-item tos-ts r-trans" data-role="trans" data-align="ts" data-random="town" data-unique="false">Transporter</li>
+<li class="tile list-group-item tos-tk r-vet" data-role="vet" data-align="tk" data-random="town" data-unique="true">Veteran<span class="badge">UNIQ</span></li>
+<li class="tile list-group-item tos-tk r-vig" data-role="vig" data-align="tk" data-random="town" data-unique="false">Vigilante</li>
+<li class="tile list-group-item tos-ne r-wit" data-role="wit" data-align="ne" data-random="neutral" data-unique="false">Witch</li>
+<li class="tile list-group-item tos-nk r-ww" data-role="ww" data-align="nk" data-random="neutral" data-unique="true">Werewolf<span class="badge">UNIQ</span></li>
 	</ul>
   </div>
 </div>
@@ -145,7 +145,124 @@
   <script>
   $(function() {
     $( ".list-group-item.tile" ).draggable({ snap: ".dropable", snapMode: "inner" });
+
+    confirm('jai','action');
+    confirm('gf','action');
+    confirm('maf','action');
+    confirm('spy','yours');
   });
+
+
+
+  function confirm(who, how) {
+  	var tile = getTile(who);
+  	var newtile = $(tile).clone();
+ 
+  	tile.addClass('hidden').promise().done(function(){
+  		$('.confirm-'+how).prepend(newtile);
+  		newtile.fadeIn();
+  		if (tile.data('unique') == false) {
+  			tile.removeClass('hidden');
+  		}
+
+  		res = removeFromGameList(tile);
+  		if (res == 0) {
+  			//cant do this
+  			newtile.remove();
+  			console.log('not possible');
+  		}
+  	});
+
+  }
+
+  function getTile(who) {
+  	return $('.possible-roles .tile.r-'+who);
+  }
+
+  function removeFromGameList(what) {
+  	//console.log(what);
+  	var byrole = $('.gamelist .r-'+$(what).data("role")).not('.disabled').first();
+  	var res = $(byrole).addClass('disabled').length;
+  	if (!res) {
+  		var byalign = $('.gamelist .tos-'+$(what).data("align")).not('.disabled').first();
+  		console.log(byalign);
+  		res = $(byalign).addClass('disabled').length;
+  	}
+  	if (!res) {
+  		var byrandom = $('.gamelist .rnd-'+$(what).data("random")).not('.disabled').first();
+  		res = $(byrandom).addClass('disabled').length;
+  	}
+
+  	 if (!res) {
+  		var byany = $('.gamelist .any').not('.disabled').first();
+  		res = $(byany).addClass('disabled').length;
+  	}
+  	if(res) {
+  		cleanPossible();
+  	}
+  	return res;
+
+  //	console.log(res);
+
+  //	console.log($(what).data("role"));
+//console.log($(what).data("align"));
+
+//console.log($(what).data("random"));
+
+  }
+
+
+  function cleanPossible(){
+  	$('.possible-roles li').not('.hidden').each(function(){
+  		//try to find slot
+  		var res = $('.gamelist .r-'+$(this).data("role")).not('.disabled').first().length;
+	  	if (!res) {
+	  		var res = $('.gamelist .tos-'+$(this).data("align")).not('.disabled').first().length;
+	  	}
+	  	if (!res) {
+	  		var res = $('.gamelist .rnd-'+$(this).data("random")).not('.disabled').first().length;
+	  	}
+	  	if (!res) {
+	  	 	var res = $('.gamelist .any').not('.disabled').first().length;
+	  	}
+	  	if(res == 0) {
+	  		$(this).addClass('hidden');
+	  	}
+  	})
+  }
+
+function sortPossible(order){
+	  var $roles = $('.possible-roles'),
+		$rolesli = $roles.children('li');
+		$rolesli.sort(function(a,b){
+		var an = a.getAttribute('data-'+order),
+			bn = b.getAttribute('data-'+order);
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	});
+		$rolesli.detach().appendTo($roles);
+	}
+
+	$('.rolesort').on('click', function(){
+		var order = ($(this).attr('data-order'));
+		if (order == 'random') {
+			neworder = 'role';
+			newname = 'ABC';
+		}else{
+			neworder = 'random';
+			newname = 'Align';
+		}
+		sortPossible(order);
+		$(this).attr('data-order', neworder)
+		$(this).text(newname)
+
+	});
   </script>
 </html>
 

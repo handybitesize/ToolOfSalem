@@ -1,11 +1,11 @@
-.tos-tk, .tos-ts, .tos-ti, .tos-tp, .tos-rt {
+.tos-tk, .tos-ts, .tos-ti, .tos-tp, .rnd-town {
 	background-color: #dff0d8;
 }
 
-.tos-ms, .tos-mk, .tos-md, .tos-rm {
+.tos-ms, .tos-mk, .tos-md, .rnd-mafia {
 	background-color: #f2dede;
 }
 
-.tos-nb, .tos-nk, .tos-ne {
+.tos-nb, .tos-nk, .tos-ne, .rnd-neutral {
 	background-color: #dddddd;
 }
